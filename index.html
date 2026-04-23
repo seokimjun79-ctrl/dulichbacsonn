@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bắc Sơn Travel - Thiên Đường Mùa Vàng</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        html::-webkit-scrollbar { width: 8px; }
+        html::-webkit-scrollbar-track { background: #f1f5f9; }
+        html::-webkit-scrollbar-thumb { background: #fbbf24; border-radius: 10px; }
+
+        @keyframes kenBurns {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        .animate-ken-burns { animation: kenBurns 20s infinite alternate ease-in-out; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-float { animation: float 3s infinite ease-in-out; }
+
+        .shimmer { position: relative; overflow: hidden; }
+        .shimmer::after {
+            content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+            transform: skewX(-25deg); transition: 0.5s;
+        }
+        .shimmer:hover::after { left: 150%; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-lg border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-black text-amber-600 tracking-tighter">BẮC SƠN</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8 text-xs font-bold uppercase tracking-widest">
+                        <a href="#home" class="hover:text-amber-600 transition">Trang chủ</a>
+                        <a href="#explore" class="hover:text-amber-600 transition">Khám phá</a>
+                        <a href="#culture" class="hover:text-amber-600 transition">Văn hóa</a>
+                        <a href="#guide" class="hover:text-amber-600 transition">Cẩm nang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <img src="./BacSon5.jpg" alt="Bac Son" class="absolute inset-0 w-full h-full object-cover animate-ken-burns">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="relative z-10 text-center text-white px-4" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-6xl md:text-8xl font-black mb-4 uppercase tracking-tighter">
+                Mùa Vàng <span class="text-amber-400 block font-light italic text-4xl md:text-6xl tracking-normal">Bắc Sơn Vẫy Gọi</span>
+            </h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light opacity-80">
+                Hành trình khám phá thung lũng lúa chín đẹp nhất Việt Nam.
+            </p>
+            <a href="#explore" class="shimmer bg-amber-500 hover:bg-amber-600 text-white px-10 py-4 rounded-full font-bold transition-all shadow-2xl uppercase text-sm tracking-[0.2em] inline-block animate-float">Bắt đầu ngay</a>
+        </div>
+    </section>
+
+    <section id="explore" class="py-24 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-20" data-aos="zoom-in">
+            <h2 class="text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">Danh Lam Thắng Cảnh</h2>
+            <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[4/5] relative">
+                    <img src="./dinh_na_lay_409320147.jpg" alt="Đỉnh Na Lay" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="text-2xl font-bold uppercase mb-1">Đỉnh Na Lay</h3>
+                        <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Săn mây & Toàn cảnh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[4/5] relative">
+                    <img src="./Lang-van-hoa-du-lich-cong-dong-Quynh-Son-ivivu-1.jpg" alt="Làng Quỳnh Sơn" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="text-2xl font-bold uppercase mb-1">Làng Quỳnh Sơn</h3>
+                        <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Văn hóa người Tày</p>
+                    </div>
+                </div>
+            </div>
+            <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="500">
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[4/5] relative">
+                    <img src="./2308.thac_dang_mo__lang_son.jpg" alt="Thác Đăng Mò" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="text-2xl font-bold uppercase mb-1">Thác Đăng Mò</h3>
+                        <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Vẻ đẹp hoang sơ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="culture" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative" data-aos="fade-right">
+                <div class="absolute -top-10 -left-10 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"></div>
+                <img src="./3.jpg" alt="Ẩm thực" class="rounded-[2rem] shadow-2xl relative z-10 hover:scale-105 transition duration-700">
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl font-black mb-8 text-amber-400 uppercase tracking-tighter">Văn Hóa & Ẩm Thực</h2>
+                <div class="space-y-6">
+                    <div class="group p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition border-l-4 border-amber-500">
+                        <h4 class="font-bold text-xl text-amber-100 uppercase">Quýt Bắc Sơn</h4>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed italic">Vị chua ngọt thanh khiết của vùng núi đá đá vôi.</p>
+                    </div>
+                    <div class="group p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition border-l-4 border-amber-500">
+                        <h4 class="font-bold text-xl text-amber-100 uppercase">Lễ Hội Lồng Tồng</h4>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed italic">Lễ hội xuống đồng cầu mùa màng bội thu truyền thống.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guide" class="py-24 px-4 max-w-5xl mx-auto">
+        <div class="text-center mb-16" data-aos="zoom-in">
+            <h2 class="text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">Cẩm Nang Bỏ Túi</h2>
+            <div class="w-16 h-1 bg-amber-500 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-2xl transition duration-500" data-aos="fade-right">
+                <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Thời điểm lý tưởng</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Hãy ghé thăm vào <strong>tháng 7 hoặc tháng 10</strong>. Đây là lúc lúa chín vàng rực cả thung lũng.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-2xl transition duration-500" data-aos="fade-left">
+                <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-6">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Chỗ nghỉ ngơi</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Homestay tại <strong>Làng Quỳnh Sơn</strong> là lựa chọn tuyệt vời để trải nghiệm nhà sàn dân tộc.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="fixed right-6 bottom-10 z-[100] flex flex-col gap-4" data-aos="fade-left">
+        <a href="https://facebook.com" target="_blank" title="Facebook" class="w-14 h-14 bg-[#1877F2] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float">
+            <i class="fab fa-facebook-f text-2xl"></i>
+        </a>
+
+        <a href="https://zalo.me/0835353388" target="_blank" title="Zalo" class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float overflow-hidden" style="animation-delay: 0.5s;">
+            <img src="./Icon_of_Zalo.svg.webp" alt="Zalo Icon" class="w-full h-full object-cover">
+        </a>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="mb-10" data-aos="fade-up">
+                <h2 class="text-3xl font-black text-amber-600 tracking-tighter mb-4">BẮC SƠN TRAVEL</h2>
+                <div class="flex justify-center space-x-10 mb-8 text-3xl">
+                    <a href="#" class="text-slate-300 hover:text-[#1877F2] transition-all hover:-translate-y-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-[#E4405F] transition-all hover:-translate-y-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-slate-300 hover:text-black transition-all hover:-translate-y-2"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-100" data-aos="fade-up">
+                <p class="text-slate-400 text-[10px] tracking-[0.3em] uppercase">&copy; 2026 BAC SON TRAVEL - ALL RIGHTS RESERVED</p>
+                <p class="text-slate-600 font-bold mt-2 text-sm uppercase">Hotline: 0835353388 | Email: info@bacson.vn</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,      // QUAN TRỌNG: Đổi thành false để animation chạy lại khi cuộn
+            mirror: true,     // Chạy animation khi cuộn ngược lên trên
+            offset: 100,
+            easing: 'ease-in-out-sine'
+        });
+    </script>
+</body>
+</html>
