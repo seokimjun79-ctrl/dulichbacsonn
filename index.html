@@ -154,16 +154,58 @@
         </div>
     </section>
 
+    <section id="map" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="zoom-in">
+                <h2 class="text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">Vị Trí Hành Trình</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+
+            <div class="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white" data-aos="fade-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59214.7346851253!2d106.18370775!3d21.9058778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31393699039655f9%3A0x6b8f3a3e63989c74!2zQuG6r2MgU8ahbiwgTOG6oW5nIFPGoW4sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1712650000000!5m2!1svi!2s" 
+                    class="w-full h-[600px] grayscale hover:grayscale-0 transition-all duration-700" 
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+
+                <div class="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md p-6 rounded-[2.5rem] shadow-2xl max-w-[320px] hidden md:block border border-slate-100" data-aos="fade-left" data-aos-delay="300">
+                    <h3 class="text-xl font-black text-slate-900 mb-2 uppercase">Thung lũng Bắc Sơn</h3>
+                    <p class="text-slate-600 text-xs mb-6 leading-relaxed">
+                        Khám phá vẻ đẹp kỳ vĩ của núi non xứ Lạng.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-slate-700">
+                            <i class="fas fa-map-marker-alt text-amber-600"></i>
+                            <span class="text-xs font-bold">Bắc Sơn, Lạng Sơn</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700">
+                            <i class="fas fa-phone-alt text-amber-600"></i>
+                            <span class="text-xs font-bold">0835353388</span>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/dir//Bắc+Sơn,+Lạng+Sơn" target="_blank" class="shimmer w-full block text-center bg-slate-900 text-white py-4 rounded-2xl font-bold uppercase text-[10px] tracking-[0.2em]">
+                        <i class="fas fa-directions mr-2"></i> Chỉ đường ngay
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:hidden mt-8 bg-white p-8 rounded-[2rem] shadow-lg text-center">
+                <h3 class="text-xl font-bold mb-4 uppercase">Thung Lũng Bắc Sơn</h3>
+                <a href="https://www.google.com/maps/dir//Bắc+Sơn,+Lạng+Sơn" target="_blank" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold inline-block uppercase text-xs tracking-widest">
+                    <i class="fas fa-directions mr-2"></i> Nhận chỉ đường
+                </a>
+            </div>
+        </div>
+    </section>
+
     <div class="fixed right-6 bottom-10 z-[100] flex flex-col gap-4" data-aos="fade-left">
-        <a href="https://facebook.com" target="_blank" title="Facebook" class="w-14 h-14 bg-[#1877F2] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float">
+        <a href="https://facebook.com" target="_blank" class="w-14 h-14 bg-[#1877F2] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float">
             <i class="fab fa-facebook-f text-2xl"></i>
         </a>
-        
-        <a href="https://zalo.me/0835353388" target="_blank" title="Zalo" class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float overflow-hidden" style="animation-delay: 0.5s;">
-            <img src="./Icon_of_Zalo.svg.webp" alt="Zalo Icon" class="w-full h-full object-cover">
+        <a href="https://zalo.me/0835353388" target="_blank" class="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float overflow-hidden" style="animation-delay: 0.5s;">
+            <img src="./Icon_of_Zalo.svg.webp" alt="Zalo" class="w-full h-full object-cover">
         </a>
-
-        <a href="tel:0835353388" title="Gọi ngay" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float" style="animation-delay: 1s;">
+        <a href="tel:0835353388" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-125 transition-transform animate-float" style="animation-delay: 1s;">
             <i class="fas fa-phone-alt text-2xl"></i>
         </a>
     </div>
